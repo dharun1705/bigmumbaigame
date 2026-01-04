@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Big Mumbai Game – Online Gaming Platform in India</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Big Mumbai Game is an online gaming platform in India offering colour prediction, lottery-style, and casual mobile games with fast withdrawals.">
+
+<style>
+:root{
+  --orange:#ff7a00;
+  --dark:#000000;
+  --border:#e6e6e6;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Arial;
+  background:#fafafa;color:#333;line-height:1.8;
+}
+a{text-decoration:none;color:inherit}
+
+/* HEADER */
+header{
+  position:sticky;top:0;z-index:999;
+  background:#fff;border-bottom:1px solid var(--border);
+}
+.topbar{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:14px 16px;
+}
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:24px;
+  font-weight:800;
+  color:var(--orange);
+}
+.logo img{
+  width:34px;height:34px;object-fit:contain;
+}
+.menu-btn{font-size:24px;cursor:pointer}
+
+/* MENU */
+.menu{
+  display:none;background:#fff;border-top:1px solid var(--border);
+}
+.menu a{
+  display:block;padding:14px 16px;font-weight:600;
+  border-bottom:1px solid var(--border);
+}
+.menu a:hover{background:var(--orange);color:#fff}
+
+/* SECTIONS */
+section{padding:28px 16px}
+h1{font-size:30px;margin-bottom:10px}
+h2{font-size:22px;color:var(--orange);margin:28px 0 10px}
+h3{font-size:17px;margin-bottom:6px}
+p{font-size:15px;margin-bottom:12px}
+
+/* HERO */
+.hero{
+  background:linear-gradient(135deg,#ff7a00,#ff9c2a);
+  color:#fff;border-radius:0 0 26px 26px;
+  padding:36px 16px;
+}
+.hero p{color:#fff}
+
+/* CTA */
+.cta{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.cta a{
+  display:inline-block;margin:10px 10px 0 0;
+  padding:12px 22px;border-radius:24px;
+  font-weight:700;
+}
+.btn-light{background:#fff;color:var(--orange)}
+.btn-dark{background:#111;color:#fff}
+
+/* CARD */
+.card{
+  background:#fff;border:1px solid var(--border);
+  border-radius:16px;padding:18px;margin-bottom:16px;
+}
+
+/* GAMES */
+.games{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+.game{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:18px;
+  text-align:center;
+  transition:.3s ease;
+}
+.game img{
+  display:block;
+  margin:0 auto 12px auto;
+  width:56px;
+  height:56px;
+}
+.game:hover{
+  background:var(--orange);
+  border-color:var(--orange);
+  color:#fff;
+}
+.game:hover h3,
+.game:hover p{
+  color:#fff;
+}
+
+/* FAQ */
+.faq-item{border-bottom:1px solid var(--border);padding:14px 0}
+.faq-q{
+  display:flex;justify-content:space-between;
+  font-weight:600;cursor:pointer;
+}
+.faq-a{display:none;margin-top:8px;font-size:14px}
+.arrow{transition:.3s}
+
+/* FOOTER */
+footer{
+  background:#111;color:#aaa;
+  padding:28px 16px;margin-top:30px;
+}
+footer p{font-size:13px}
+.copy{text-align:center;font-size:12px;color:#777;margin-top:10px}
+
+/* MOBILE */
+@media(max-width:420px){
+  .games{grid-template-columns:1fr}
+  h1{font-size:26px}
+  .logo{font-size:22px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="topbar">
+    <div class="logo">
+      <img src="https://via.placeholder.com/80x80" alt="Big Mumbai Game Logo">
+      Big Mumbai Game
+    </div>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  </div>
+  <div class="menu" id="menu">
+    <a onclick="go('home')">Home</a>
+    <a onclick="go('games')">Games</a>
+    <a onclick="go('faq')">FAQ</a>
+    <a onclick="go('responsible')">Responsible Gaming</a>
+    <a onclick="go('contact')">Contact Us</a>
+    <a onclick="go('terms')">Disclaimer</a>
+  </div>
+</header>
+
+<section class="hero" id="home">
+<h1>Big Mumbai Game – Online Gaming Platform in India</h1>
+<p>Big Mumbai Game is an online gaming platform in India that offers a range of prediction-based, lottery-style, and casual mobile games through a single application. The platform allows users to register using a mobile number, access different game formats, earn rewards, and withdraw funds using supported payment methods.</p>
+<p>The app is designed mainly for mobile users who prefer short gameplay sessions and simple rules. Most games operate on fixed time intervals, making the platform suitable for users who want quick results without long or complex gameplay.</p>
+
+<div class="cta">
+  <a class="btn-light">Register Now</a>
+  <a class="btn-dark">Login</a>
+</div>
+</section>
+
+<section>
+<h2>Overview of Big Mumbai Game Platform</h2>
+<div class="card">
+<p>Big Mumbai Game brings multiple game categories together in one place, reducing the need to switch between different apps. The platform focuses on ease of use, clear navigation, and stable performance across devices.</p>
+<p>After logging in, users can access games, bonuses, deposits, withdrawals, and account information directly from the main dashboard. This layout helps both new and experienced users understand how the platform works without spending time learning complicated menus.</p>
+<p>Customer support is available throughout the day to assist users with account, gameplay, or payment-related questions.</p>
+</div>
+
+<h2 id="games">Games Available on Big Mumbai Game</h2>
+<div class="games">
+  <div class="game"><img src="https://via.placeholder.com/56"><h3>Colour Prediction Game</h3><p>The Colour Prediction Game runs on short, timed rounds. Users select a colour option before the countdown ends, and results are generated automatically once the round is complete. Because each round takes only a short time, this game is commonly preferred by users who enjoy quick decision-based gameplay.</p></div>
+  <div class="game"><img src="https://via.placeholder.com/56"><h3>Wingo Game</h3><p>Wingo is a time-based game that combines chance with structured betting options. Each round follows a fixed duration, allowing users to place predictions and view outcomes within a limited time frame.</p></div>
+  <div class="game"><img src="https://via.placeholder.com/56"><h3>K3 Lottery</h3><p>K3 Lottery follows a traditional number-selection format. Users choose numbers according to the game rules and wait for the draw result. This format is familiar to users who enjoy lottery-style games.</p></div>
+  <div class="game"><img src="https://via.placeholder.com/56"><h3>5D Lottery</h3><p>The 5D Lottery expands on standard lottery formats by allowing users to select five numbers. This increases the number of possible combinations and adds more depth for users who prefer number-based gameplay.</p></div>
+  <div class="game"><img src="https://via.placeholder.com/56"><h3>TRX Hash Game</h3><p>TRX Hash Game uses hash-based result generation inspired by blockchain systems. Outcomes are derived from hash values, making this game suitable for users interested in technology-driven gaming formats.</p></div>
+  <div class="game"><img src="https://via.placeholder.com/56"><h3>Chicken Road Game</h3><p>Chicken Road Game is a casual mobile game focused on timing and navigation. Players guide characters through obstacles to earn in-game rewards, offering a lighter alternative to prediction and lottery games.</p></div>
+</div>
+
+<h2>Key Features</h2>
+<div class="card">
+<p>The platform supports multiple payment methods, including UPI, digital wallets, bank cards, and supported cryptocurrency options such as USDT (TRC20). Deposits are generally processed instantly, while withdrawals are completed within a reasonable time depending on the selected payment method.</p>
+<p>Security measures such as encrypted connections, account verification, and secure payment gateways are used to protect user data and transactions. These systems help reduce the risk of unauthorized access.</p>
+<p>Big Mumbai Game also provides different bonus options, including registration rewards, referral benefits, and daily login incentives. Bonus availability and conditions may change based on platform rules.</p>
+</div>
+
+<h2>Bonuses and Reward Programs</h2>
+<div class="card">
+
+<h3>YouTube Creative Video Events</h3>
+<p>This platform offers advanced support and generous bonuses to all video creators, content creators, and influencers, helping them enhance their work and earn rewards for their contributions.</p>
+
+<h3>Big Mumbai Game First Recharge Bonus Event</h3>
+<p>When a player makes their first deposit on this platform, they receive a bonus ranging from 10% to 200%, depending on the special promotional offer available at that time.</p>
+
+<h3>Rebate Cashback Bonus Event</h3>
+<p>Many players enjoy a variety of exciting games, which is why Real Time Rebate is offered. This feature increases a percentage of the bet amount, providing additional rewards and enhancing the overall betting experience.</p>
+
+<h3>Win Streak Bonus Event</h3>
+<p>In the Wingo 1-minute game, claim your Win Streak bonus at the Big Mumbai Game self-service center, divided into two types based on your single bet amount.</p>
+
+<h3>Super Jackpot Bonus Event</h3>
+<p>Through Big Mumbai Game Trick you can win prizes by playing various Slots Games and have a chance to win substantial Jackpot prizes.</p>
+
+<h3>Head Agent Invite Agent Bonus</h3>
+<p>We can also call this event Gold Win Event, because in this event we are given extra money and prizes for free on monthly, weekly and daily basis.</p>
+
+<h3>Daily Big Mumbai Game Gift Code Free</h3>
+<p>After registering and logging into this platform, you can then join the Big Mumbai Game official telegram channel given above and earn money by claiming a free gift code every day.</p>
+
+</div>
+
+<h2>App Information</h2>
+<div class="card">
+<p><strong>App Name:</strong> Big Mumbai Game App</p>
+<p><strong>Invite Code:</strong> 635656315449</p>
+<p><strong>APK Size:</strong> Approx. 3 MB</p>
+<p><strong>Registration Bonus:</strong> ₹25</p>
+<p><strong>Referral Bonus:</strong> ₹100</p>
+<p><strong>Customer Support:</strong> 24/7 Availability</p>
+</div>
+
+<h2>How to Deposit</h2>
+<div class="card">
+<p>Login → Wallet → Deposit → Select Channel → Choose Amount → Pay via Paytm, PhonePe, GPay.</p>
+</div>
+
+<h2>How to Withdraw</h2>
+<div class="card">
+<p>Login → Wallet → Withdraw → Add Bank → Enter Amount → Confirm Password → Withdraw.</p>
+</div>
+</section>
+
+<section id="faq">
+<h2>Frequently Asked Questions</h2>
+<div class="faq-item">
+<div class="faq-q" onclick="faq(this)">What is Big Mumbai Game?<span class="arrow">▼</span></div>
+<div class="faq-a">It is an Indian online gaming platform offering prediction, lottery, and casual games.</div>
+</div>
+<div class="faq-item">
+<div class="faq-q" onclick="faq(this)">How do I register?<span class="arrow">▼</span></div>
+<div class="faq-a">Register using a mobile number and password.</div>
+</div>
+<div class="faq-item">
+<div class="faq-q" onclick="faq(this)">Is it secure?<span class="arrow">▼</span></div>
+<div class="faq-a">Yes. Encrypted connections and secure servers are used.</div>
+</div>
+</section>
+
+<section id="terms">
+<h2>Terms and Conditions</h2>
+<p>Multiple accounts or misuse may lead to suspension. Verification is required.</p>
+</section>
+
+<section id="responsible">
+<h2>Responsible Gaming Disclaimer</h2>
+<p>18+ only. Play responsibly and within financial limits.</p>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<div class="card">
+<p><strong>Email:</strong> support@example.com</p>
+<p><strong>Phone:</strong> +91 90000 00000</p>
+<p><strong>Support Hours:</strong> 24/7</p>
+<p><strong>Response Time:</strong> Within 24 hours</p>
+</div>
+</section>
+
+<footer>
+<p>Big Mumbai Game | Play Responsibly | 18+</p>
+<div class="copy">© 2026 Big Mumbai Game</div>
+</footer>
+
+<script>
+function toggleMenu(){
+  const menu=document.getElementById('menu');
+  menu.style.display=menu.style.display==='block'?'none':'block';
+}
+function go(id){
+  const url=id==='home'?window.location.pathname:window.location.pathname+'?page='+id;
+  window.open(url,'_blank');
+}
+function faq(el){
+  const answer=el.nextElementSibling;
+  const arrow=el.querySelector('.arrow');
+  const open=answer.style.display==='block';
+  document.querySelectorAll('.faq-a').forEach(a=>a.style.display='none');
+  document.querySelectorAll('.arrow').forEach(ar=>ar.style.transform='rotate(0deg)');
+  if(!open){
+    answer.style.display='block';
+    arrow.style.transform='rotate(180deg)';
+  }
+}
+(function(){
+  const page=new URLSearchParams(window.location.search).get('page');
+  if(!page) return;
+  document.querySelectorAll('section').forEach(s=>s.style.display='none');
+  const target=document.getElementById(page);
+  if(target) target.style.display='block';
+})();
+</script>
+
+</body>
+</html>
